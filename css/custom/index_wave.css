@@ -72,3 +72,18 @@
       min-height: 40px;
     }
   }
+#post-top-bg {
+  display: none;
+}
+#post-top-bg.post-top-img {
+  display: block;
+}
+#post-top-bg.post-top-img:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
