@@ -1,22 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>医学图像处理（二）</title>
-    <url>/2024/04/13/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/20240413-%E5%8C%BB%E5%AD%A6%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
+    <title>数据结构(二)</title>
+    <url>/2024/04/14/61802/</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>人工智能</category>
+        <category>算法逻辑</category>
       </categories>
       <tags>
-        <tag>医学图像处理</tag>
-        <tag>计算机视觉</tag>
-        <tag>计算机图像处理</tag>
-        <tag>毕业设计</tag>
+        <tag>数据结构</tag>
+        <tag>树</tag>
+        <tag>二叉树</tag>
+        <tag>二叉搜索树</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构（一）</title>
+    <url>/2024/04/15/8561/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>算法逻辑</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>JavaScript</tag>
+        <tag>线性表</tag>
+        <tag>字符串</tag>
+        <tag>栈</tag>
+        <tag>队列</tag>
+        <tag>链表</tag>
+        <tag>集合</tag>
+        <tag>字典</tag>
       </tags>
   </entry>
   <entry>
     <title>数据结构（三）</title>
-    <url>/2024/04/15/%E7%AE%97%E6%B3%95%E9%80%BB%E8%BE%91/20240415-JS%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84(%E4%B8%89)%20/</url>
+    <url>/2024/04/15/48498/</url>
     <content><![CDATA[<h3 id="图的简介"><a href="#图的简介" class="headerlink" title="图的简介"></a>图的简介</h3><p>图用于表示任何二元关系</p>
 <p>JS中没有图，但可以用 <code>Object</code> 和 <code>Array</code> 构建图</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> graph</span><br><span class="line">	<span class="number">0</span>:[<span class="number">1</span>,<span class="number">2</span>],</span><br><span class="line">	<span class="number">1</span>:[<span class="number">2</span>],</span><br><span class="line">	<span class="number">2</span>:[<span class="number">0</span>,<span class="number">3</span>]</span><br><span class="line">	<span class="number">3</span>:[<span class="number">3</span>]<span class="number">1</span></span><br><span class="line">&#125;；</span><br></pre></td></tr></table></figure>
@@ -38,56 +57,207 @@
         <category>算法逻辑</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
         <tag>数据结构</tag>
+        <tag>JavaScript</tag>
         <tag>图</tag>
       </tags>
   </entry>
   <entry>
-    <title>医学图像处理（三）</title>
-    <url>/2024/04/13/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/20240413-%E5%8C%BB%E5%AD%A6%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%EF%BC%88%E4%B8%89%EF%BC%89/</url>
-    <content><![CDATA[]]></content>
+    <title>conda虚拟环境配置</title>
+    <url>/2020/04/30/38XTJB/</url>
+    <content><![CDATA[<h1 id="conda虚拟环境配置"><a href="#conda虚拟环境配置" class="headerlink" title="conda虚拟环境配置"></a>conda虚拟环境配置</h1><h2 id="Q1-虚拟环境常用命令"><a href="#Q1-虚拟环境常用命令" class="headerlink" title="Q1: 虚拟环境常用命令"></a>Q1: 虚拟环境常用命令</h2><ol>
+<li><p>查看当前存在哪些虚拟环境</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">conda env list </span><br><span class="line">conda info <span class="literal">-e</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>检查更新当前conda</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">conda update conda</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Python创建虚拟环境</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">conda create -n your_env_name python=x.x</span><br></pre></td></tr></table></figure>
+
+<p>anaconda命令创建python版本为x.x，名字为your_env_name的虚拟环境。<strong>your_env_name文件可以在Anaconda安装目录envs文件下找到</strong>。</p>
+</li>
+<li><p>激活或者切换虚拟环境</p>
+<p>打开命令行，输入python –version检查当前 python 版本。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Linux:  source activate your_env_nam</span><br><span class="line">Windows: activate your_env_name</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>对虚拟环境中安装额外的包</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">conda install -n your_env_name [package]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>关闭虚拟环境(即从当前环境退出返回使用PATH环境中的默认python版本)</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">deactivate env_name</span><br><span class="line">或者`activate root`切回root环境</span><br><span class="line">Linux下：source deactivate </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除虚拟环境</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda remove -n your_env_name --all</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除环境钟的某个包</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda remove --name $your_env_name  $package_name </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置国内镜像</p>
+</li>
+<li><p><a href="https://link.zhihu.com/?target=http://Anaconda.org">http://Anaconda.org</a>的服务器在国外，安装多个packages时，conda下载的速度经常很慢。清华TUNA镜像源有Anaconda仓库的镜像，将其加入conda的配置即可：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\# 添加Anaconda的TUNA镜像</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge</span><br><span class="line"></span><br><span class="line">\# 设置搜索时显示通道地址</span><br><span class="line">conda config --set show_channel_urls yes</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 清华源</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</span><br><span class="line">conda config --set show_channel_urls yes</span><br></pre></td></tr></table></figure>
+
+<p>中科院源</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/</span><br><span class="line">conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/msys2/</span><br><span class="line">conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/bioconda/</span><br><span class="line">conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/menpo/</span><br><span class="line">conda config --set show_channel_urls yes</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>恢复默认镜像</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda config --remove-key channels</span><br></pre></td></tr></table></figure></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>转载自:</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://zhuanlan.zhihu.com/p/94744929">Anaconda-用conda创建python虚拟环境 - 知乎 (zhihu.com)</a></td>
+</tr>
+<tr>
+<td><a href="https://blog.csdn.net/weixin_43975408/article/details/106051526">python、anaconda国内镜像源_中科院源-CSDN博客</a></td>
+</tr>
+</tbody></table>
+<h2 id="Q2-使用命令或vscode创建的虚拟环境未命名无法安装包"><a href="#Q2-使用命令或vscode创建的虚拟环境未命名无法安装包" class="headerlink" title="Q2: 使用命令或vscode创建的虚拟环境未命名无法安装包"></a>Q2: 使用命令或vscode创建的虚拟环境未命名无法安装包</h2><p>2.在指定目录下建立conda虚拟环境</p>
+<p>具体地，可以使用conda create –prefix&#x3D;your_path python&#x3D;X.X来在指定目录下建立conda虚拟环境。以D盘为例，如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda create --prefix=D:/2023XinXiaoYan/envs/my_env python=3.8</span><br></pre></td></tr></table></figure>
+
+<p>其中，<code>D:/2023XinXiaoYan/envs</code> 是我指定的用于建立 <code>conda</code> 虚拟环境的目录，<code>my_env</code> 是我虚拟环境的名字，大家对应修改为自己的即可。<code>python=3.8</code> 表示python的版本号为3.8。</p>
+<p>3.可能会出现的一些问题</p>
+<p>根据上述命令建立了 <code>conda</code> 虚拟环境后，然后接着 <code>conda activate your_env_name</code> 。结果发现出错了，如下：</p>
+<p>如果你输入 <code>conda env list </code> 就会发现，虚拟环境虽然是创建成功了，但是没有名字呀！</p>
+<p>这时我们可以输入 <code>conda config --show envs_dirs</code> 来查看一下当前的环境目录，如下。可以看到我们新建立的环境目录没有加进来！</p>
+<p>因此，使用 <code>conda config --append envs_dirs your_path</code> 将我们的目录加进来。具体地，以我为例，如下。</p>
+<p>加完环境目录后，再 <code>conda env list</code> 就可以看到我们的虚拟环境彻底建好了。</p>
+<p>此时，我们再对虚拟环境进行激活，如下：</p>
+<p>可以看到，成功进入了自己的虚拟环境。接着，我们就可以在自己的虚拟环境里下载或卸载各种包，而不用担心影响其他人的虚拟环境了。</p>
+<hr>
+<p>原文链接：<a href="https://blog.csdn.net/qq_40968179/article/details/127584615">https://blog.csdn.net/qq_40968179/article/details/127584615</a></p>
+]]></content>
       <categories>
         <category>人工智能</category>
+        <category>question</category>
       </categories>
       <tags>
-        <tag>医学图像处理</tag>
-        <tag>计算机视觉</tag>
-        <tag>计算机图像处理</tag>
-        <tag>毕业设计</tag>
+        <tag>AI</tag>
+        <tag>anaconda</tag>
       </tags>
   </entry>
   <entry>
-    <title>数据结构(二)</title>
-    <url>/2024/04/14/%E7%AE%97%E6%B3%95%E9%80%BB%E8%BE%91/20240414-JS%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84(%E4%BA%8C)/</url>
-    <content><![CDATA[]]></content>
+    <title>react基本使用</title>
+    <url>/2024/04/15/55678/</url>
+    <content><![CDATA[<h2 id="react项目创建和目录结构"><a href="#react项目创建和目录结构" class="headerlink" title="react项目创建和目录结构"></a>react项目创建和目录结构</h2><ol>
+<li><p>创建项目</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npx create-react-app &lt;projectName&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>核心库</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import React from &#x27;react&#x27;</span><br><span class="line">import ReactDom from &#x27;react-dom/client&#x27;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph TB</span><br><span class="line">    A[App组件] --&gt; B[Page1组件]</span><br><span class="line">    A[App组件] --&gt; C[Page2组件]</span><br><span class="line">    A[App组件]--&gt; D[Html中的id为root的div]</span><br><span class="line">    D[Html中的id为root的div]--&gt; E[项目显示]</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+<p>其中，<code>Page1</code> 和 <code>Page2</code> 组件为 <code>App</code> 的子组件，由React库负责生成</p>
+<p>App组件转化为DOM的过程由 <code>react-dom</code> 负责</p>
+</li>
+<li><p>根组件渲染</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 渲染你的 React 组件</span><br><span class="line">const root = createRoot(document.getElementById(&#x27;app&#x27;));</span><br><span class="line">root.render(&lt;h1&gt;Hello, world&lt;/h1&gt;);</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="react组件和jsx"><a href="#react组件和jsx" class="headerlink" title="react组件和jsx"></a>react组件和jsx</h2><h3 id="react-组件"><a href="#react-组件" class="headerlink" title="react 组件"></a><code>react</code> 组件</h3><ol>
+<li><p>函数组件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">export default function Profile() &#123;</span><br><span class="line">  return (</span><br><span class="line">    &lt;img</span><br><span class="line">      src=&quot;https://i.imgur.com/MK3eW3Am.jpg&quot;</span><br><span class="line">      alt=&quot;Katherine Johnson&quot;</span><br><span class="line">    /&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>export default</code>它导出文件中的主要函数以便你以后可以从其他文件引入它。</p>
+</li>
+<li><p>类组件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class Profile() extends React.Component &#123;</span><br><span class="line">  render()&#123;</span><br><span class="line">      return </span><br><span class="line">      &lt;img</span><br><span class="line">      src=&quot;https://i.imgur.com/MK3eW3Am.jpg&quot;</span><br><span class="line">      alt=&quot;Katherine Johnson&quot;</span><br><span class="line">    /&gt;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>导出、导入组件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">export default function Gallery() &#123;</span><br><span class="line">  return (</span><br><span class="line">    &lt;section&gt;</span><br><span class="line">      &lt;h1&gt;了不起的科学家&lt;/h1&gt;</span><br><span class="line">      &lt;Profile /&gt;</span><br><span class="line">      &lt;Profile /&gt;</span><br><span class="line">      &lt;Profile /&gt;</span><br><span class="line">    &lt;/section&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="JSX语法"><a href="#JSX语法" class="headerlink" title="JSX语法"></a>JSX语法</h3><ol>
+<li><p>特点：由于<code>React</code>项目利用<code>babel</code>对语句进行编译，所以可以和js混用。本质是对JS语法的扩展。</p>
+<p>使用 React 的 <code>creatElement</code> 方法也能创建组件但是不常用：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">export default function Profile() &#123;</span><br><span class="line">  return React.creatElement(&#x27;img&#x27;, [</span><br><span class="line">      src=&quot;https://i.imgur.com/MK3eW3Am.jpg&quot;,</span><br><span class="line">      alt=&quot;Katherine Johnson&quot;], </span><br><span class="line">                            &#x27;&#x27;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>所以说，<code>React</code> 和 <code>jsx</code> 语法是相互独立的，<code>creatElement</code> 方法会创建一个 <code>React.Element</code> 对象(虚拟DOM)，进而渲染成节点。</p>
+</li>
+<li><p>jsx 的 <code>&#123;&#125;</code> 渲染原则</p>
+<ol>
+<li>字符串，数字：直接渲染</li>
+<li>方法：无法渲染</li>
+<li>对象：无法渲染，只能渲染 <code>Element</code> 对象</li>
+<li>布尔值：不渲染</li>
+<li>undefined，null：不渲染</li>
+<li>数组：每一项单独渲染</li>
+<li>表达式：运行之后渲染</li>
+</ol>
+</li>
+</ol>
+<h2 id="react的事件绑定"><a href="#react的事件绑定" class="headerlink" title="react的事件绑定"></a>react的事件绑定</h2><ol>
+<li><p>react 事件绑定和原生js相似（首字母大写）：</p>
+<figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">function</span> <span class="title function_">Button</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">handleClick</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;You clicked me!&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;handleClick&#125;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      Click me</span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>this</code>指向：</p>
+<p><strong>不做任何处理，默认this指向 <code>undefined</code></strong></p>
+<p>如果你像下面这样写事件监听函数，浏览器一定会给你报语法错误</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// JSX</span><br><span class="line">class Test extends React.Component &#123;</span><br><span class="line"> handleClick () &#123;</span><br><span class="line">  console.log(this)</span><br><span class="line">  &#125;</span><br><span class="line"> render () &#123;</span><br><span class="line"> return &lt;button onClick=&#123;this.handleClick&#125;&gt;&lt;/button&gt;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;  // undefined</span><br></pre></td></tr></table></figure>
+
+<p>此时如果你点击 <code>button</code> 按钮，会输出 <code>undefined</code>。</p>
+<p>注意此处的**<code>return &lt;button onClick=&#123;this.handleClick&#125;&gt;&lt;/button&gt;</code>**，<code>this.handleClick</code> 不带括号，<code>this.handleClick()</code>为函数调用。</p>
+<p><em>解决方案：</em></p>
+<p>我们知道你可以通过 <code>bind</code> 方法或者箭头函数来强制绑定 <code>this</code> 来避免这个问题。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;button onClick=&#123;this.handleClick.bind(this)&#125;&gt;&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
+<p>或者使用箭头函数：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">handleClick = () =&gt; &#123;</span><br><span class="line">    this.setState(&#123;&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><p>如果this没有绑定到当前对象，那此时 <code>this</code> 到底指向了谁？是 <code>undefined</code> 还是全局对象，比如 <code>window</code>？（根据前面提到的浏览器报错信息，答案显然是 <code>undefined</code>）</p>
+</li>
+<li><p>为什么 React 组件的实例会失去指向它本身的 <code>this</code> 指向？</p>
+</li>
+<li><p>这是 JavaScript 语言本身导致的还是 React 的内部某些原因导致的呢？</p>
+<p><strong>知乎：<a href="https://zhuanlan.zhihu.com/p/37911534">深入解读 React 组件中的 “this</a></strong></p>
+</li>
+</ul>
+<ol start="3">
+<li><p>事件绑定操作：</p>
+<ol>
+<li><p>事件传参：<code>bind(this, arg1, arg2 ... )</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;button onClick=&#123;this.handleClick.bind(this)&#125;&gt;&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>事件对象：默认传递给方法</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// JSX</span><br><span class="line">class Test extends React.Component &#123;</span><br><span class="line"> handleClick (arg1,..., e) &#123;</span><br><span class="line">  console.log(e)</span><br><span class="line">  &#125;</span><br><span class="line"> render () &#123;</span><br><span class="line"> return &lt;button onClick=&#123;this.handleClick.bind(this, arg1...)&#125;&gt;&lt;/button&gt;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;  // undefined</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>阻止默认行为和阻止冒泡</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">handleClick (arg1,..., e) &#123;</span><br><span class="line"> e.<span class="title function_">stopPropagation</span>()  <span class="comment">// 阻止冒泡</span></span><br><span class="line"> e.<span class="title function_">preventDefult</span>()  <span class="comment">//阻止默认行为</span></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ol>
+<h2 id="react中的响应式数据"><a href="#react中的响应式数据" class="headerlink" title="react中的响应式数据"></a>react中的响应式数据</h2><h2 id="条件渲染和列表循环"><a href="#条件渲染和列表循环" class="headerlink" title="条件渲染和列表循环"></a>条件渲染和列表循环</h2><h2 id="表单绑定"><a href="#表单绑定" class="headerlink" title="表单绑定"></a>表单绑定</h2><h2 id="props和组件间的传值，插槽"><a href="#props和组件间的传值，插槽" class="headerlink" title="props和组件间的传值，插槽"></a>props和组件间的传值，插槽</h2><h2 id="react中的样式操作"><a href="#react中的样式操作" class="headerlink" title="react中的样式操作"></a>react中的样式操作</h2><h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><h2 id="实战编写增伤改查列表"><a href="#实战编写增伤改查列表" class="headerlink" title="实战编写增伤改查列表"></a>实战编写增伤改查列表</h2><h2 id="ref和context"><a href="#ref和context" class="headerlink" title="ref和context"></a>ref和context</h2><h2 id="函数组件和hook"><a href="#函数组件和hook" class="headerlink" title="函数组件和hook"></a>函数组件和hook</h2>]]></content>
       <categories>
-        <category>算法逻辑</category>
+        <category>前端</category>
+        <category>基础知识</category>
       </categories>
       <tags>
-        <tag>数据结构</tag>
-        <tag>树</tag>
-        <tag>二叉树</tag>
-        <tag>二叉搜索树</tag>
+        <tag>react</tag>
       </tags>
   </entry>
   <entry>
-    <title>医学图像处理（一）</title>
-    <url>/2024/04/13/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/20240413-%E5%8C%BB%E5%AD%A6%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="Part-1-Basic-Concepts-基本概念"><a href="#Part-1-Basic-Concepts-基本概念" class="headerlink" title="Part 1:Basic Concepts 基本概念"></a>Part 1:Basic Concepts 基本概念</h1><h2 id="Histogram-and-Threshold-Binary-Operation"><a href="#Histogram-and-Threshold-Binary-Operation" class="headerlink" title="Histogram and Threshold;Binary Operation"></a>Histogram and Threshold;Binary Operation</h2><h2 id="直方图和阈值；二进制运算"><a href="#直方图和阈值；二进制运算" class="headerlink" title="直方图和阈值；二进制运算"></a>直方图和阈值；二进制运算</h2><h2 id="Convolution-Correlation"><a href="#Convolution-Correlation" class="headerlink" title="Convolution: Correlation"></a>Convolution: Correlation</h2><h2 id="卷积：相关性"><a href="#卷积：相关性" class="headerlink" title="卷积：相关性"></a>卷积：相关性</h2><h2 id="Basic-Image-Operations-Region-Property"><a href="#Basic-Image-Operations-Region-Property" class="headerlink" title="Basic Image Operations;Region Property"></a>Basic Image Operations;Region Property</h2><h2 id="基本图像操作；区域属性"><a href="#基本图像操作；区域属性" class="headerlink" title="基本图像操作；区域属性"></a>基本图像操作；区域属性</h2><h2 id="VTK-and-ITK"><a href="#VTK-and-ITK" class="headerlink" title="VTK and ITK"></a>VTK and ITK</h2><h1 id="Part-2-Mathematical-Morphology"><a href="#Part-2-Mathematical-Morphology" class="headerlink" title="Part 2:Mathematical Morphology"></a>Part 2:Mathematical Morphology</h1><h2 id="数学形态"><a href="#数学形态" class="headerlink" title="数学形态"></a>数学形态</h2><h2 id="Binary-Morphology"><a href="#Binary-Morphology" class="headerlink" title="Binary Morphology"></a>Binary Morphology</h2><h2 id="二元形态"><a href="#二元形态" class="headerlink" title="二元形态"></a>二元形态</h2><h2 id="Grayscale-Morphology"><a href="#Grayscale-Morphology" class="headerlink" title="Grayscale Morphology"></a>Grayscale Morphology</h2><h2 id="灰度形态"><a href="#灰度形态" class="headerlink" title="灰度形态"></a>灰度形态</h2>]]></content>
+    <title>react 实战技巧</title>
+    <url>/2024/04/15/2/</url>
+    <content><![CDATA[<h2 id="react中的全局状态管理"><a href="#react中的全局状态管理" class="headerlink" title="react中的全局状态管理"></a>react中的全局状态管理</h2><h2 id="react中的路由权限控制"><a href="#react中的路由权限控制" class="headerlink" title="react中的路由权限控制"></a>react中的路由权限控制</h2><h2 id="组件库等相关生态"><a href="#组件库等相关生态" class="headerlink" title="组件库等相关生态"></a>组件库等相关生态</h2>]]></content>
       <categories>
-        <category>人工智能</category>
+        <category>前端</category>
+        <category>基础知识</category>
       </categories>
       <tags>
-        <tag>医学图像处理</tag>
-        <tag>计算机视觉</tag>
-        <tag>计算机图像处理</tag>
-        <tag>毕业设计</tag>
+        <tag>react</tag>
       </tags>
   </entry>
   <entry>
     <title>算法（一）</title>
-    <url>/2024/04/16/%E7%AE%97%E6%B3%95%E9%80%BB%E8%BE%91/20240416-%E7%AE%97%E6%B3%95(%E4%B8%80)/</url>
+    <url>/2024/04/16/40594/</url>
     <content><![CDATA[<h3 id="查找算法"><a href="#查找算法" class="headerlink" title="查找算法"></a>查找算法</h3><h4 id="线性查找"><a href="#线性查找" class="headerlink" title="线性查找"></a>线性查找</h4><ul>
 <li>思路：<ol>
 <li>从数组的第一个元素开始。</li>
@@ -257,27 +427,8 @@
       </tags>
   </entry>
   <entry>
-    <title>数据结构（一）</title>
-    <url>/2024/04/15/%E7%AE%97%E6%B3%95%E9%80%BB%E8%BE%91/20240415-JS%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84(%E4%B8%80)/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>算法逻辑</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>数据结构</tag>
-        <tag>线性表</tag>
-        <tag>字符串</tag>
-        <tag>栈</tag>
-        <tag>队列</tag>
-        <tag>链表</tag>
-        <tag>集合</tag>
-        <tag>字典</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vue常见问题(一)</title>
-    <url>/2024/04/17/%E5%89%8D%E7%AB%AF/%E5%AE%9E%E9%99%85%E9%97%AE%E9%A2%98/20240417-Vue%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98(%E4%B8%80)/</url>
+    <url>/2024/04/17/22669/</url>
     <content><![CDATA[<h2 id="Vue数据绑定原理"><a href="#Vue数据绑定原理" class="headerlink" title="Vue数据绑定原理"></a>Vue数据绑定原理</h2><p><strong>Vue数据绑定采用 <code>数据劫持</code> 和 <code>订阅者-发布者</code> 结合的模式。</strong></p>
 <ol>
 <li><p>Vue2中，使用ES5中引入的 <code>defineProperty</code> 方法,它可以在一个对象上定义一个新属性，或者修改一个对象的现有属性,并返回这个对象。</p>
@@ -305,119 +456,8 @@
       </tags>
   </entry>
   <entry>
-    <title>react基本使用</title>
-    <url>/2024/04/15/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/20240415-react%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="react项目创建和目录结构"><a href="#react项目创建和目录结构" class="headerlink" title="react项目创建和目录结构"></a>react项目创建和目录结构</h2><ol>
-<li><p>创建项目</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npx create-react-app &lt;projectName&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>核心库</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import React from &#x27;react&#x27;</span><br><span class="line">import ReactDom from &#x27;react-dom/client&#x27;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph TB</span><br><span class="line">    A[App组件] --&gt; B[Page1组件]</span><br><span class="line">    A[App组件] --&gt; C[Page2组件]</span><br><span class="line">    A[App组件]--&gt; D[Html中的id为root的div]</span><br><span class="line">    D[Html中的id为root的div]--&gt; E[项目显示]</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
-
-<p>其中，<code>Page1</code> 和 <code>Page2</code> 组件为 <code>App</code> 的子组件，由React库负责生成</p>
-<p>App组件转化为DOM的过程由 <code>react-dom</code> 负责</p>
-</li>
-<li><p>根组件渲染</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 渲染你的 React 组件</span><br><span class="line">const root = createRoot(document.getElementById(&#x27;app&#x27;));</span><br><span class="line">root.render(&lt;h1&gt;Hello, world&lt;/h1&gt;);</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="react组件和jsx"><a href="#react组件和jsx" class="headerlink" title="react组件和jsx"></a>react组件和jsx</h2><h3 id="react-组件"><a href="#react-组件" class="headerlink" title="react 组件"></a><code>react</code> 组件</h3><ol>
-<li><p>函数组件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">export default function Profile() &#123;</span><br><span class="line">  return (</span><br><span class="line">    &lt;img</span><br><span class="line">      src=&quot;https://i.imgur.com/MK3eW3Am.jpg&quot;</span><br><span class="line">      alt=&quot;Katherine Johnson&quot;</span><br><span class="line">    /&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>export default</code>它导出文件中的主要函数以便你以后可以从其他文件引入它。</p>
-</li>
-<li><p>类组件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class Profile() extends React.Component &#123;</span><br><span class="line">  render()&#123;</span><br><span class="line">      return </span><br><span class="line">      &lt;img</span><br><span class="line">      src=&quot;https://i.imgur.com/MK3eW3Am.jpg&quot;</span><br><span class="line">      alt=&quot;Katherine Johnson&quot;</span><br><span class="line">    /&gt;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>导出、导入组件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">export default function Gallery() &#123;</span><br><span class="line">  return (</span><br><span class="line">    &lt;section&gt;</span><br><span class="line">      &lt;h1&gt;了不起的科学家&lt;/h1&gt;</span><br><span class="line">      &lt;Profile /&gt;</span><br><span class="line">      &lt;Profile /&gt;</span><br><span class="line">      &lt;Profile /&gt;</span><br><span class="line">    &lt;/section&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="JSX语法"><a href="#JSX语法" class="headerlink" title="JSX语法"></a>JSX语法</h3><ol>
-<li><p>特点：由于<code>React</code>项目利用<code>babel</code>对语句进行编译，所以可以和js混用。本质是对JS语法的扩展。</p>
-<p>使用 React 的 <code>creatElement</code> 方法也能创建组件但是不常用：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">export default function Profile() &#123;</span><br><span class="line">  return React.creatElement(&#x27;img&#x27;, [</span><br><span class="line">      src=&quot;https://i.imgur.com/MK3eW3Am.jpg&quot;,</span><br><span class="line">      alt=&quot;Katherine Johnson&quot;], </span><br><span class="line">                            &#x27;&#x27;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>所以说，<code>React</code> 和 <code>jsx</code> 语法是相互独立的，<code>creatElement</code> 方法会创建一个 <code>React.Element</code> 对象(虚拟DOM)，进而渲染成节点。</p>
-</li>
-<li><p>jsx 的 <code>&#123;&#125;</code> 渲染原则</p>
-<ol>
-<li>字符串，数字：直接渲染</li>
-<li>方法：无法渲染</li>
-<li>对象：无法渲染，只能渲染 <code>Element</code> 对象</li>
-<li>布尔值：不渲染</li>
-<li>undefined，null：不渲染</li>
-<li>数组：每一项单独渲染</li>
-<li>表达式：运行之后渲染</li>
-</ol>
-</li>
-</ol>
-<h2 id="react的事件绑定"><a href="#react的事件绑定" class="headerlink" title="react的事件绑定"></a>react的事件绑定</h2><ol>
-<li><p>react 事件绑定和原生js相似（首字母大写）：</p>
-<figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">function</span> <span class="title function_">Button</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">handleClick</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;You clicked me!&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;handleClick&#125;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      Click me</span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>this</code>指向：</p>
-<p><strong>不做任何处理，默认this指向 <code>undefined</code></strong></p>
-<p>如果你像下面这样写事件监听函数，浏览器一定会给你报语法错误</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// JSX</span><br><span class="line">class Test extends React.Component &#123;</span><br><span class="line"> handleClick () &#123;</span><br><span class="line">  console.log(this)</span><br><span class="line">  &#125;</span><br><span class="line"> render () &#123;</span><br><span class="line"> return &lt;button onClick=&#123;this.handleClick&#125;&gt;&lt;/button&gt;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;  // undefined</span><br></pre></td></tr></table></figure>
-
-<p>此时如果你点击 <code>button</code> 按钮，会输出 <code>undefined</code>。</p>
-<p>注意此处的**<code>return &lt;button onClick=&#123;this.handleClick&#125;&gt;&lt;/button&gt;</code>**，<code>this.handleClick</code> 不带括号，<code>this.handleClick()</code>为函数调用。</p>
-<p><em>解决方案：</em></p>
-<p>我们知道你可以通过 <code>bind</code> 方法或者箭头函数来强制绑定 <code>this</code> 来避免这个问题。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;button onClick=&#123;this.handleClick.bind(this)&#125;&gt;&lt;/button&gt;</span><br></pre></td></tr></table></figure>
-
-<p>或者使用箭头函数：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">handleClick = () =&gt; &#123;</span><br><span class="line">    this.setState(&#123;&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li><p>如果this没有绑定到当前对象，那此时 <code>this</code> 到底指向了谁？是 <code>undefined</code> 还是全局对象，比如 <code>window</code>？（根据前面提到的浏览器报错信息，答案显然是 <code>undefined</code>）</p>
-</li>
-<li><p>为什么 React 组件的实例会失去指向它本身的 <code>this</code> 指向？</p>
-</li>
-<li><p>这是 JavaScript 语言本身导致的还是 React 的内部某些原因导致的呢？</p>
-<p><strong>知乎：<a href="https://zhuanlan.zhihu.com/p/37911534">深入解读 React 组件中的 “this</a></strong></p>
-</li>
-</ul>
-<ol start="3">
-<li><p>事件绑定操作：</p>
-<ol>
-<li><p>事件传参：<code>bind(this, arg1, arg2 ... )</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;button onClick=&#123;this.handleClick.bind(this)&#125;&gt;&lt;/button&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>事件对象：默认传递给方法</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// JSX</span><br><span class="line">class Test extends React.Component &#123;</span><br><span class="line"> handleClick (arg1,..., e) &#123;</span><br><span class="line">  console.log(e)</span><br><span class="line">  &#125;</span><br><span class="line"> render () &#123;</span><br><span class="line"> return &lt;button onClick=&#123;this.handleClick.bind(this, arg1...)&#125;&gt;&lt;/button&gt;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;  // undefined</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>阻止默认行为和阻止冒泡</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">handleClick (arg1,..., e) &#123;</span><br><span class="line"> e.<span class="title function_">stopPropagation</span>()  <span class="comment">// 阻止冒泡</span></span><br><span class="line"> e.<span class="title function_">preventDefult</span>()  <span class="comment">//阻止默认行为</span></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-</ol>
-<h2 id="react中的响应式数据"><a href="#react中的响应式数据" class="headerlink" title="react中的响应式数据"></a>react中的响应式数据</h2><h2 id="条件渲染和列表循环"><a href="#条件渲染和列表循环" class="headerlink" title="条件渲染和列表循环"></a>条件渲染和列表循环</h2><h2 id="表单绑定"><a href="#表单绑定" class="headerlink" title="表单绑定"></a>表单绑定</h2><h2 id="props和组件间的传值，插槽"><a href="#props和组件间的传值，插槽" class="headerlink" title="props和组件间的传值，插槽"></a>props和组件间的传值，插槽</h2><h2 id="react中的样式操作"><a href="#react中的样式操作" class="headerlink" title="react中的样式操作"></a>react中的样式操作</h2><h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><h2 id="实战编写增伤改查列表"><a href="#实战编写增伤改查列表" class="headerlink" title="实战编写增伤改查列表"></a>实战编写增伤改查列表</h2><h2 id="ref和context"><a href="#ref和context" class="headerlink" title="ref和context"></a>ref和context</h2><h2 id="函数组件和hook"><a href="#函数组件和hook" class="headerlink" title="函数组件和hook"></a>函数组件和hook</h2>]]></content>
-      <categories>
-        <category>前端</category>
-        <category>基础知识</category>
-      </categories>
-      <tags>
-        <tag>react</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>react 实战技巧</title>
-    <url>/2024/04/15/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/20240415-react%E5%AE%9E%E6%88%98/</url>
-    <content><![CDATA[<h2 id="react中的全局状态管理"><a href="#react中的全局状态管理" class="headerlink" title="react中的全局状态管理"></a>react中的全局状态管理</h2><h2 id="react中的路由权限控制"><a href="#react中的路由权限控制" class="headerlink" title="react中的路由权限控制"></a>react中的路由权限控制</h2><h2 id="组件库等相关生态"><a href="#组件库等相关生态" class="headerlink" title="组件库等相关生态"></a>组件库等相关生态</h2>]]></content>
-      <categories>
-        <category>前端</category>
-        <category>基础知识</category>
-      </categories>
-      <tags>
-        <tag>react</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>react 进阶技巧</title>
-    <url>/2024/04/15/%E5%89%8D%E7%AB%AF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/20240415-react%E8%BF%9B%E9%98%B6%E6%8A%80%E5%B7%A7/</url>
+    <url>/2024/04/15/1/</url>
     <content><![CDATA[<h2 id="高阶组件"><a href="#高阶组件" class="headerlink" title="高阶组件"></a>高阶组件</h2><h2 id="reac性能问题和优化"><a href="#reac性能问题和优化" class="headerlink" title="reac性能问题和优化"></a>reac性能问题和优化</h2><h2 id="react-router的使用"><a href="#react-router的使用" class="headerlink" title="react-router的使用"></a>react-router的使用</h2>]]></content>
       <categories>
         <category>前端</category>
@@ -430,7 +470,7 @@
   </entry>
   <entry>
     <title>前端面经-Vue(一)</title>
-    <url>/2024/04/16/%E5%89%8D%E7%AB%AF/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1/20240416-%E5%89%8D%E7%AB%AF%E9%9D%A2%E7%BB%8F-Vue(%E4%B8%80)/</url>
+    <url>/2024/04/16/30015/</url>
     <content><![CDATA[<h2 id="关于生命周期"><a href="#关于生命周期" class="headerlink" title="关于生命周期"></a><strong>关于生命周期</strong></h2><h3 id="生命周期有哪些-在那里发送请求？"><a href="#生命周期有哪些-在那里发送请求？" class="headerlink" title="生命周期有哪些,在那里发送请求？"></a>生命周期有哪些,在那里发送请求？</h3><p><strong>生命周期：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">beforeCreate	// 初始化之后调用</span><br><span class="line">created  // 完成data observe 和 watch, 此时 $el 不可见</span><br><span class="line">beforeMount		// 首次调用 render函数</span><br><span class="line">mounted  // 将虚拟DOM挂载到 DOM上</span><br><span class="line">beforeUpdate  // 数据更新，$el未更新,可以访问现有DOM, 只在客户端渲染, 服务端只会初次渲染</span><br><span class="line">updated  // $el更新</span><br><span class="line">activated dectivated // keep-alive中调用</span><br><span class="line">beforeDestroy	// 销毁之前，$el 仍然可用</span><br><span class="line">destroyed  // 解绑实例，子实例和监视器也被销毁</span><br></pre></td></tr></table></figure>
 
@@ -579,177 +619,8 @@
       </tags>
   </entry>
   <entry>
-    <title>前端面经-Vue(二)</title>
-    <url>/2024/04/16/%E5%89%8D%E7%AB%AF/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1/20240416-%E5%89%8D%E7%AB%AF%E9%9D%A2%E7%BB%8F-Vue(%E4%BA%8C)/</url>
-    <content><![CDATA[<h2 id="Vuex"><a href="#Vuex" class="headerlink" title="Vuex"></a>Vuex</h2><h3 id="Vuex的属性"><a href="#Vuex的属性" class="headerlink" title="Vuex的属性"></a><strong>Vuex的属性</strong></h3><p><code>state</code> &#x3D;&gt; 全局共享数据</p>
-<p><code>getters</code> &#x3D;&gt; 二次计算的数据</p>
-<p><code>mutations</code> &#x3D;&gt; 同步方法</p>
-<p><code>actions</code> &#x3D;&gt; 异步方法 &#x2F; 提交数据</p>
-<p><code>modules</code> &#x3D;&gt; 模块划分<br>对比MVC的模型来看，<code>state</code>看成一个数据库，只是它是响应式的，刷新之后页面数据就会改变；actions看成controller层，做数据的业务逻辑；mutations看成model层，做数据的增删改查操作。</p>
-<h3 id="state的使用"><a href="#state的使用" class="headerlink" title="state的使用"></a><strong><code>state</code>的使用</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">this.$store.state.xxx</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"> <span class="comment">// mapState: 把 state 属性映射到 computed 身上</span></span><br><span class="line"><span class="attr">computed</span>:&#123;</span><br><span class="line">   <span class="title class_">Vuex</span>.<span class="title function_">mapState</span>(&#123;</span><br><span class="line">      <span class="attr">input</span>: <span class="function"><span class="params">state</span>=&gt;</span>state.<span class="property">inputVal</span>,</span><br><span class="line">      <span class="attr">n</span>: <span class="function"><span class="params">state</span>=&gt;</span>state.<span class="property">n</span></span><br><span class="line">  &#125;)   </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 简写形式：</span></span><br><span class="line"><span class="keyword">import</span> &#123; mapState &#125; <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span></span><br><span class="line"><span class="attr">computed</span>:&#123;</span><br><span class="line">	...<span class="title function_">mapState</span>([<span class="string">&#x27;input&#x27;</span>, <span class="string">&#x27;n&#x27;</span>])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>其中，<code>this.$store.state.xxx</code>可以修改数据，<code>mapState</code>不能修改数据。</p>
-<h3 id="修改getter的值"><a href="#修改getter的值" class="headerlink" title="修改getter的值**"></a>修改<code>getter</code>的值**</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">this</span>.<span class="property">$store</span>.<span class="property">getters</span>.<span class="property">xxx</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">computed</span>:&#123;</span><br><span class="line">    ...<span class="title class_">Vuex</span>.<span class="title function_">mapGetters</span>(&#123;</span><br><span class="line">        <span class="title class_">NumN</span>:<span class="string">&quot;NumN&quot;</span></span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 简写</span></span><br><span class="line"><span class="keyword">import</span> &#123; mapGetters&#125; <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span></span><br><span class="line"><span class="attr">methods</span>:&#123;  </span><br><span class="line">	...<span class="title function_">mapGetters</span>([<span class="string">&#x27;NumN&#x27;</span>])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>getters</code>类似于组件里面<code>computed</code>，同时也<strong>监听属性的变化</strong>，当<code>state</code>中的属性发生改变的时候就会触发<code>getters</code>里面的方法。<code>getters</code>里面的每一个方法中都会有一个参数 <code>state</code>。</p>
-<h3 id="mutation-和-action-的区别"><a href="#mutation-和-action-的区别" class="headerlink" title="mutation 和 action 的区别"></a><strong><code>mutation</code> 和 <code>action</code> 的区别</strong></h3><p><code>mutations</code>里面的函数主要用来修改<code>state</code>中的数据。<code>mutations</code>里面的所有方法都会有2个参数，一个是<code>store</code>中的<code>state</code>，另外一个是需要传递的参数。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// mapMutations 把 mutations 里面的方法映射到 methods 中</span></span><br><span class="line"><span class="attr">methods</span>:&#123;</span><br><span class="line">    ...<span class="title class_">Vuex</span>.<span class="title function_">mapMutations</span>(&#123;</span><br><span class="line">        <span class="attr">handleAdd</span>:<span class="string">&quot;handlMutationseAdd&quot;</span></span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 简写</span></span><br><span class="line"><span class="keyword">import</span> &#123; mapMutations&#125; <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span></span><br><span class="line"><span class="attr">methods</span>:&#123;  </span><br><span class="line">	...<span class="title function_">mapMutations</span>([<span class="string">&#x27;handlMutationseAdd&#x27;</span>])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>actions</code>里面的函数主要用来处理<strong>异步操作</strong>以及一些业务逻辑,每一个函数里面都有一个形参，这个形参是一个对象，里面有一个<code>commit</code>方法，这个方法用来**触发<code>mutations</code>**里面的方法。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// mapMutations 把 actions 里面的方法映射到 methods 中</span></span><br><span class="line"><span class="attr">methods</span>:&#123;</span><br><span class="line">    ...<span class="title class_">Vuex</span>.<span class="title function_">mapActionss</span>(&#123;</span><br><span class="line">        <span class="attr">handleAdd</span>:<span class="string">&quot;handlMutationseAdd&quot;</span></span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 简写</span></span><br><span class="line"><span class="keyword">import</span> &#123; mapActionss&#125; <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span></span><br><span class="line"><span class="attr">methods</span>:&#123;  </span><br><span class="line">	...<span class="title function_">mapActionss</span>([<span class="string">&#x27;handlMutationseAdd&#x27;</span>])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="modules的使用"><a href="#modules的使用" class="headerlink" title="modules的使用"></a><strong>modules的使用</strong></h3><p>modules是把公共的状态按照模块进行划分。每个模块都相当于一个小型的<code>Vuex</code>，即每个模块里面都会有<code>state</code> <code>getters</code> <code>actions</code> <code>mutations</code>。</p>
-<p>多人协作开发的时候，可能子模块和主模块中的函数名字会相同，这样在调用函数的时候，相同名字的函数都会被调用，就会发生问题。为了解决这个问题，导出模块的时候要加 <code>namespace:true</code> ，主要的作用是将每个模块都有独立命名空间。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">	<span class="attr">namespaced</span>: <span class="literal">true</span>,</span><br><span class="line">	....</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>模块化后，<code>store</code>实例的<code>state</code>属性访问方式为:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">this</span>.<span class="property">$store</span>.<span class="property">state</span>.<span class="property">todo</span>.<span class="property">inputVal</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="Vuex持久化储存"><a href="#Vuex持久化储存" class="headerlink" title="Vuex持久化储存"></a><strong>Vuex持久化储存</strong></h3><p><code>Vuex</code>本身不具有持久化存储的能力，vuex是单向数据流，存在vuex中的变量都是响应式数据。组件中一般会通过computed来使用store中的状态、且有缓存，但是当我们去刷新浏览器的时候，store中的状态都会被清空、重新初始化为最初的状态。要实现持久化存储，就是将其状态保存到<code>localStorage</code>或者<code>sessionStorage</code>中，实现方法有两种：</p>
-<ol>
-<li><p>使用插件：<code>vuex-persistedstate</code></p>
-<p>安装插件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install vuex-persistedstate</span><br></pre></td></tr></table></figure>
-
-<p>使用：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Vue</span> <span class="keyword">from</span> <span class="string">&quot;vue&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Vuex</span> <span class="keyword">from</span> <span class="string">&quot;vuex&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> test <span class="keyword">from</span> <span class="string">&#x27;./modules/test&#x27;</span></span><br><span class="line"><span class="keyword">import</span> user <span class="keyword">from</span> <span class="string">&#x27;./modules/user&#x27;</span></span><br><span class="line"><span class="comment">// 引入插件</span></span><br><span class="line"><span class="keyword">import</span> createPersistedState <span class="keyword">from</span> <span class="string">&quot;vuex-persistedstate&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">use</span>(<span class="title class_">Vuex</span>);</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> <span class="title class_">Vuex</span>.<span class="title class_">Store</span>(&#123;</span><br><span class="line">  <span class="attr">modules</span>: &#123;</span><br><span class="line">    test,</span><br><span class="line">    user</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">/* vuex数据持久化配置 */</span></span><br><span class="line">  <span class="attr">plugins</span>: [</span><br><span class="line">    <span class="title function_">createPersistedState</span>(&#123;</span><br><span class="line">      <span class="comment">// 存储方式：localStorage、sessionStorage、cookies</span></span><br><span class="line">      <span class="attr">storage</span>: <span class="variable language_">window</span>.<span class="property">sessionStorage</span>,</span><br><span class="line">      <span class="comment">// 存储的 key 的key值</span></span><br><span class="line">      <span class="attr">key</span>: <span class="string">&quot;store&quot;</span>,</span><br><span class="line">      <span class="title function_">reducer</span>(<span class="params">state</span>) &#123; <span class="comment">//render错误修改</span></span><br><span class="line">      <span class="comment">// 要存储的数据：本项目采用es6扩展运算符的方式存储了state中所有的数据</span></span><br><span class="line">        <span class="keyword">return</span> &#123; ...state &#125;;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  ]</span><br></pre></td></tr></table></figure>
-
-<p>如果只需要存储 <code>state</code> 中一部分数据：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">plugins</span>: [</span><br><span class="line">  <span class="title function_">createPersistedState</span>(&#123;</span><br><span class="line">    <span class="attr">storage</span>: <span class="variable language_">window</span>.<span class="property">sessionStorage</span>,</span><br><span class="line">    <span class="attr">key</span>: <span class="string">&quot;store&quot;</span>,</span><br><span class="line">    <span class="comment">// 只持久化存储user模块的状态</span></span><br><span class="line">    <span class="attr">paths</span>: [<span class="string">&#x27;user&#x27;</span>]</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>自己实现：</p>
-<p><code>utils/index.js</code></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 存储方式：localStorage、sessionStorage、cookies</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">class</span> <span class="title class_">SessionUtils</span> &#123;</span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">get</span>(<span class="params">key</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title class_">JSON</span>.<span class="title function_">parse</span>(<span class="variable language_">window</span>.<span class="property">sessionStorage</span>.<span class="title function_">getItem</span>(key))</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">set</span>(<span class="params">key, value</span>) &#123;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">sessionStorage</span>.<span class="title function_">setItem</span>(key, <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(value))</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">remove</span>(<span class="params">key</span>) &#123;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">sessionStorage</span>.<span class="title function_">removeItem</span>(key)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>然后在vuex中的使用：<code>store/index.js</code> </p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">SessionUtils</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;@/utils/index.js&#x27;</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="attr">namespaced</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">state</span>: &#123;</span><br><span class="line">    <span class="attr">count</span>: <span class="title class_">SessionUtils</span>.<span class="title function_">get</span>(<span class="string">&#x27;count&#x27;</span>) || <span class="number">0</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">mutations</span>: &#123;</span><br><span class="line">    <span class="title function_">UPDATE_COUNT</span>(<span class="params">state, count</span>) &#123;</span><br><span class="line">      state.<span class="property">count</span>++</span><br><span class="line">      <span class="title class_">SessionUtils</span>.<span class="title function_">set</span>(<span class="string">&#x27;count&#x27;</span>, state.<span class="property">count</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h2><h3 id="路由的模式和区别"><a href="#路由的模式和区别" class="headerlink" title="路由的模式和区别"></a>路由的模式和区别</h3><table>
-<thead>
-<tr>
-<th align="center"></th>
-<th align="center">history</th>
-<th align="center">hash</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">表象</td>
-<td align="center"><a href="https://zhuanlan.zhihu.com/p/24814675">https://zhuanlan.zhihu.com/p/24814675</a></td>
-<td align="center"><a href="http://example.com/#/foo/bar">http://example.com/#/foo/bar</a></td>
-</tr>
-<tr>
-<td align="center">发送请求</td>
-<td align="center">通过HTML5 History API可以在不刷新页面的情况下，直接改变当前URL。会发一次请求</td>
-<td align="center">hash仅仅是客户端的一个状态，也就是说，当向服务器发请求的时候，hash部分并不会发过去。不会发请求</td>
-</tr>
-<tr>
-<td align="center">优点</td>
-<td align="center">更加直观和正式</td>
-<td align="center">兼容性更好</td>
-</tr>
-<tr>
-<td align="center">项目打包前自测</td>
-<td align="center">默认看不到内容</td>
-<td align="center">默认可以看到内容</td>
-</tr>
-</tbody></table>
-<h3 id="子路由和动态路由"><a href="#子路由和动态路由" class="headerlink" title="子路由和动态路由"></a>子路由和动态路由</h3><p><em>动态路由</em></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> routes = [</span><br><span class="line">  <span class="comment">// 动态字段以冒号开始</span></span><br><span class="line">  &#123; <span class="attr">path</span>: <span class="string">&#x27;/users/:id&#x27;</span>, <span class="attr">component</span>: <span class="title class_">User</span> &#125;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-
-<p><em>子路由</em></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> routes = [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">path</span>: <span class="string">&#x27;/user/:id&#x27;</span>,</span><br><span class="line">    <span class="attr">component</span>: <span class="title class_">User</span>,</span><br><span class="line">    <span class="attr">children</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="comment">// 当 /user/:id/profile 匹配成功</span></span><br><span class="line">        <span class="comment">// UserProfile 将被渲染到 User 的 &lt;router-view&gt; 内部</span></span><br><span class="line">        <span class="attr">path</span>: <span class="string">&#x27;profile&#x27;</span>,</span><br><span class="line">        <span class="attr">component</span>: <span class="title class_">UserProfile</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="comment">// 当 /user/:id/posts 匹配成功</span></span><br><span class="line">        <span class="comment">// UserPosts 将被渲染到 User 的 &lt;router-view&gt; 内部</span></span><br><span class="line">        <span class="attr">path</span>: <span class="string">&#x27;posts&#x27;</span>,</span><br><span class="line">        <span class="attr">component</span>: <span class="title class_">UserPosts</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">    ],</span><br><span class="line">  &#125;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-
-<h3 id="路由传值"><a href="#路由传值" class="headerlink" title="路由传值"></a>路由传值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">this</span>.<span class="property">$router</span>.<span class="title function_">push</span>(&#123;</span><br><span class="line">    <span class="attr">path</span>: <span class="string">&quot;/login&quot;</span>,</span><br><span class="line">    <span class="attr">query</span>: &#123;</span><br><span class="line">        <span class="attr">uname</span>: <span class="variable language_">this</span>.<span class="property">userName</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$router</span>.<span class="title function_">push</span>(&#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;login&quot;</span>,</span><br><span class="line">    <span class="attr">params</span>: &#123;</span><br><span class="line">        <span class="attr">uname</span>: <span class="variable language_">this</span>.<span class="property">userName</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h3 id="导航故障"><a href="#导航故障" class="headerlink" title="导航故障"></a>导航故障</h3><p>当使用 <code>router-link</code> 组件时，Vue Router 会自动调用 <code>router.push</code> 来触发一次导航。 有些情况会留在同一页面上：</p>
-<ul>
-<li>用户已经位于他们正在尝试导航到的页面</li>
-<li>一个<a href="https://v3.router.vuejs.org/zh/guide/advanced/navigation-guards.html">导航守卫</a>通过调用 <code>next(false)</code> 中断了这次导航</li>
-<li>一个<a href="https://v3.router.vuejs.org/zh/guide/advanced/navigation-guards.html">导航守卫</a>抛出了一个错误，或者调用了 <code>next(new Error())</code></li>
-</ul>
-<p>当使用 <code>router-link</code> 组件时，这些失败都不会打印出错误。如果你使用 <code>router.push</code> 或者 <code>router.replace</code> 的话，可能会在控制台看到一条 <em>“Uncaught (in promise) Error”</em> 这样的错误，后面跟着一条更具体的消息。</p>
-<p>解决方法是在请求的后面打印抛出的错误。</p>
-<h3 id="route-和-router"><a href="#route-和-router" class="headerlink" title="$route 和 $router"></a><code>$route</code> 和 <code>$router</code></h3><p><code>$route</code>是路由信息对象，里面主要包含路由的一些基本信息，包含当前的路径，参数，query对象等。(包括name、meta、path、hash、query、params、fullPath、matched、redirectedFrom)</p>
-<p><em>route object 出现在多个地方:</em></p>
-<ol>
-<li>组件内的 this.route和route watcher 回调（监测变化处理）;</li>
-<li>router.match(location) 的返回值</li>
-<li>scrollBehavior 方法的参数</li>
-</ol>
-<p>方法：</p>
-<ol>
-<li><code>$route.path</code> 字符串，对应当前路由的路径，总是解析为绝对路径，如 “&#x2F;foo&#x2F;bar”</li>
-<li><code>$route.params</code> 一个 key&#x2F;value 对象，包含了 动态片段 和 全匹配片段，<br>   如果没有路由参数，就是一个空对象。</li>
-<li><code>$route.query</code>  一个 key&#x2F;value 对象，表示 URL 查询参数。<br>   例如，对于路径 &#x2F;foo?user&#x3D;1，则有 $route.query.user &#x3D;&#x3D; 1, 如果没有查询参数，则是个空对象。</li>
-<li><code>$route.hash</code> 当前路由的 hash 值 (不带 #) ，如果没有 hash 值，则为空字符串。锚点</li>
-<li><code>$route.fullPath</code> 完成解析后的 URL，包含查询参数和 hash 的完整路径。</li>
-<li><code>$route.matched</code> 数组，包含当前匹配的路径中所包含的所有片段所对应的配置参数对象。</li>
-<li><code>$route.name</code>  当前路径名字</li>
-<li><code>$route.meta</code>  路由元信息</li>
-</ol>
-<p><code>$router</code>对象是全局路由的实例，是router构造方法的实例,包含了一些路由的跳转方法，钩子函数等</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 带查询参数，变成 /register?plan=123</span></span><br><span class="line">this.<span class="variable">$router</span>.<span class="title function_ invoke__">push</span>(&#123; <span class="attr">path</span>: <span class="string">&#x27;register&#x27;</span>, <span class="attr">query</span>: &#123; <span class="attr">plan</span>: <span class="string">&#x27;123&#x27;</span> &#125;&#125;)</span><br><span class="line"><span class="comment">// 页面路由跳转 前进或者后退</span></span><br><span class="line">this.<span class="variable">$router</span>.<span class="title function_ invoke__">go</span>(-<span class="number">1</span>)</span><br><span class="line">    <span class="comment">// 一般使用replace来做404页面</span></span><br><span class="line">this.<span class="variable">$router</span>.<span class="title function_ invoke__">replace</span>(<span class="string">&#x27;/&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="导航守卫"><a href="#导航守卫" class="headerlink" title="导航守卫"></a>导航守卫</h3><p><em>全局守卫</em>  <strong>(使用不多)</strong></p>
-<p><code>router.beforeEach(fn)</code>: 全局前置路由守卫</p>
-<p><code>afterEach(fn)</code>: 全局后置路由守卫, 表示离开当前路由时执行</p>
-<p>fn中有三个参数</p>
-<ul>
-<li>to:表示要去哪里</li>
-<li>from：表示从哪里来</li>
-<li>next：表示通不通过</li>
-</ul>
-<p>关于<code>next()</code>的使用</p>
-<ul>
-<li><code>next()</code> 等价于 next( true ) 表示可以从当前路由跳转到目标路由</li>
-<li><code>next( false )</code> 表示不通过， 表示从当前路由跳转不到目标路由</li>
-<li><code>next(’/login’)</code> 等价于 next({path:’&#x2F;login’,params,query}), 跳转指定的路由</li>
-<li>next( fn ) 数据预加载</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">router.<span class="title function_">beforeEach</span>( <span class="function">(<span class="params">to,<span class="keyword">from</span>,next</span>) =&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">const</span> name = <span class="variable language_">localStorage</span>.<span class="title function_">getItem</span>(<span class="string">&#x27;name&#x27;</span>);<span class="comment">//查看本地存储上是否有name对象</span></span><br><span class="line">    <span class="keyword">if</span>( name || to.<span class="property">path</span> === <span class="string">&#x27;/login&#x27;</span>)&#123;<span class="comment">//短路逻辑，有就可以继续执行，没有就跳转到登录页面</span></span><br><span class="line">        <span class="title function_">next</span>()</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">     <span class="title function_">next</span>( <span class="string">&#x27;/login&#x27;</span> )<span class="comment">//跳转登录页面</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line">router.<span class="title function_">afterEach</span>( <span class="function">(<span class="params">to,<span class="keyword">from</span>,next</span>)=&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>(to.<span class="property">path</span> === <span class="string">&#x27;/user&#x27;</span>)&#123;<span class="comment">//当to的path值等于这个时</span></span><br><span class="line">        <span class="title function_">alert</span>(<span class="string">&#x27;确定进入user吗&#x27;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p><em>全局的解析守卫</em></p>
-<p>  在 <code>2.5.0+</code>你可以用 <code>router.beforeResolve</code> 注册一个全局守卫。这和 <code>router.beforeEach</code> 类似，区别是在导航被确认之前，同时在所有组件内守卫和异步路由组件被解析之后，解析守卫就被调用。必须保证整个项目的守卫和异步路由组件解析完成</p>
-<p><em>路由独享守卫</em>——<strong>写在路由表里</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line"><span class="attr">path</span>: <span class="string">&#x27;/user&#x27;</span>,</span><br><span class="line"><span class="attr">component</span>: <span class="title class_">User</span>,</span><br><span class="line"><span class="attr">beforeEnter</span>: <span class="function">(<span class="params"> to,<span class="keyword">from</span>,next </span>) =&gt;</span>&#123;</span><br><span class="line">    <span class="comment">// console.log(to)</span></span><br><span class="line">    <span class="keyword">const</span> name = <span class="variable language_">localStorage</span>.<span class="title function_">getItem</span>(<span class="string">&#x27;name&#x27;</span>);<span class="comment">//判断本地存储有没有name对象</span></span><br><span class="line">    <span class="keyword">if</span>( name)&#123;<span class="comment">//存在就可以继续执行</span></span><br><span class="line">        <span class="title function_">next</span>()</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">                <span class="title function_">alert</span>(<span class="string">&#x27;你还没有登录，点击跳转登录&#x27;</span>)<span class="comment">//不存在就弹窗告诉没有登录，点击登录</span></span><br><span class="line">                <span class="title function_">next</span>(<span class="string">&#x27;/login&#x27;</span>)</span><br><span class="line">            &#125;,<span class="number">0</span>)</span><br><span class="line">       &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<p><em>组件内守卫</em> <strong>(不推荐用)</strong></p>
-<ul>
-<li>beforeRouteEnther( (to,from,next) &#x3D;&gt;{} ) 进入组件时触发</li>
-<li>beforeRouteUpdate( (to,from,next) &#x3D;&gt;{} ) 数据改变时触发</li>
-<li>beforeRouteLeave( (to,from,next) &#x3D;&gt;{} ) 离开组件时触发</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//判断两个输入框是否有值输入，有就可以直接离开，没有弹窗告诉确定是否离开，防止误触</span></span><br><span class="line"><span class="title function_">beforeRouteLeave</span>(<span class="params">to,<span class="keyword">from</span>,next</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="variable language_">this</span>.<span class="property">username</span> &amp;&amp; <span class="variable language_">this</span>.<span class="property">pwd</span>)&#123;</span><br><span class="line">        <span class="title function_">next</span>()</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="title function_">confirm</span>(<span class="string">&#x27;你确定要离开吗&#x27;</span>))&#123;<span class="comment">//返回一个布尔值</span></span><br><span class="line">            <span class="title function_">next</span>()</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="title function_">next</span>(<span class="literal">false</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="监听路由"><a href="#监听路由" class="headerlink" title="监听路由"></a>监听路由</h3><ol>
-<li><p>使用 <code>watch</code> 监听</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">watch</span>:&#123;</span><br><span class="line">  $router(to,<span class="keyword">from</span>)&#123;</span><br><span class="line">       <span class="variable language_">console</span>.<span class="title function_">log</span>(to.<span class="property">path</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-</li>
-<li><p>使用 <code>beforeRouteUpdate</code> 监听</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">beforeRouteUpdate (to, <span class="keyword">from</span>, next) &#123;</span><br><span class="line">	<span class="title function_">next</span>()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>前端</category>
-        <category>面试八股</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>面试</tag>
-        <tag>web前端</tag>
-        <tag>vuex</tag>
-        <tag>vue-router</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>前端面经-JS（一）</title>
-    <url>/2024/04/23/%E5%89%8D%E7%AB%AF/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1/20240423-%E5%89%8D%E7%AB%AF%E9%9D%A2%E7%BB%8F-JS(%E4%B8%80)/</url>
+    <url>/2024/04/23/31NKJTB/</url>
     <content><![CDATA[<h2 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h2><h3 id="Q1-延迟加载的方法有哪些"><a href="#Q1-延迟加载的方法有哪些" class="headerlink" title="Q1: 延迟加载的方法有哪些"></a>Q1: 延迟加载的方法有哪些</h3><p><code>async</code>和<code>defer</code>属性都用于指定脚本的加载方式，将脚本与HTML文档的解析和渲染过程分离，以避免阻塞页面的呈现。因此，通过使用defer属性或async属性，可以优化页面加载性能，避免脚本阻塞文档的解析过程。</p>
 <ol>
 <li><p><code>aysnc</code><br>目的：不让页面等待脚本下载和执行，从而<strong>异步加载页面其他内容</strong>。</p>
@@ -958,8 +829,177 @@
       </tags>
   </entry>
   <entry>
+    <title>前端面经-Vue(二)</title>
+    <url>/2024/04/16/37481/</url>
+    <content><![CDATA[<h2 id="Vuex"><a href="#Vuex" class="headerlink" title="Vuex"></a>Vuex</h2><h3 id="Vuex的属性"><a href="#Vuex的属性" class="headerlink" title="Vuex的属性"></a><strong>Vuex的属性</strong></h3><p><code>state</code> &#x3D;&gt; 全局共享数据</p>
+<p><code>getters</code> &#x3D;&gt; 二次计算的数据</p>
+<p><code>mutations</code> &#x3D;&gt; 同步方法</p>
+<p><code>actions</code> &#x3D;&gt; 异步方法 &#x2F; 提交数据</p>
+<p><code>modules</code> &#x3D;&gt; 模块划分<br>对比MVC的模型来看，<code>state</code>看成一个数据库，只是它是响应式的，刷新之后页面数据就会改变；actions看成controller层，做数据的业务逻辑；mutations看成model层，做数据的增删改查操作。</p>
+<h3 id="state的使用"><a href="#state的使用" class="headerlink" title="state的使用"></a><strong><code>state</code>的使用</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">this.$store.state.xxx</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"> <span class="comment">// mapState: 把 state 属性映射到 computed 身上</span></span><br><span class="line"><span class="attr">computed</span>:&#123;</span><br><span class="line">   <span class="title class_">Vuex</span>.<span class="title function_">mapState</span>(&#123;</span><br><span class="line">      <span class="attr">input</span>: <span class="function"><span class="params">state</span>=&gt;</span>state.<span class="property">inputVal</span>,</span><br><span class="line">      <span class="attr">n</span>: <span class="function"><span class="params">state</span>=&gt;</span>state.<span class="property">n</span></span><br><span class="line">  &#125;)   </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 简写形式：</span></span><br><span class="line"><span class="keyword">import</span> &#123; mapState &#125; <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span></span><br><span class="line"><span class="attr">computed</span>:&#123;</span><br><span class="line">	...<span class="title function_">mapState</span>([<span class="string">&#x27;input&#x27;</span>, <span class="string">&#x27;n&#x27;</span>])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中，<code>this.$store.state.xxx</code>可以修改数据，<code>mapState</code>不能修改数据。</p>
+<h3 id="修改getter的值"><a href="#修改getter的值" class="headerlink" title="修改getter的值**"></a>修改<code>getter</code>的值**</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">this</span>.<span class="property">$store</span>.<span class="property">getters</span>.<span class="property">xxx</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">computed</span>:&#123;</span><br><span class="line">    ...<span class="title class_">Vuex</span>.<span class="title function_">mapGetters</span>(&#123;</span><br><span class="line">        <span class="title class_">NumN</span>:<span class="string">&quot;NumN&quot;</span></span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 简写</span></span><br><span class="line"><span class="keyword">import</span> &#123; mapGetters&#125; <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span></span><br><span class="line"><span class="attr">methods</span>:&#123;  </span><br><span class="line">	...<span class="title function_">mapGetters</span>([<span class="string">&#x27;NumN&#x27;</span>])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>getters</code>类似于组件里面<code>computed</code>，同时也<strong>监听属性的变化</strong>，当<code>state</code>中的属性发生改变的时候就会触发<code>getters</code>里面的方法。<code>getters</code>里面的每一个方法中都会有一个参数 <code>state</code>。</p>
+<h3 id="mutation-和-action-的区别"><a href="#mutation-和-action-的区别" class="headerlink" title="mutation 和 action 的区别"></a><strong><code>mutation</code> 和 <code>action</code> 的区别</strong></h3><p><code>mutations</code>里面的函数主要用来修改<code>state</code>中的数据。<code>mutations</code>里面的所有方法都会有2个参数，一个是<code>store</code>中的<code>state</code>，另外一个是需要传递的参数。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// mapMutations 把 mutations 里面的方法映射到 methods 中</span></span><br><span class="line"><span class="attr">methods</span>:&#123;</span><br><span class="line">    ...<span class="title class_">Vuex</span>.<span class="title function_">mapMutations</span>(&#123;</span><br><span class="line">        <span class="attr">handleAdd</span>:<span class="string">&quot;handlMutationseAdd&quot;</span></span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 简写</span></span><br><span class="line"><span class="keyword">import</span> &#123; mapMutations&#125; <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span></span><br><span class="line"><span class="attr">methods</span>:&#123;  </span><br><span class="line">	...<span class="title function_">mapMutations</span>([<span class="string">&#x27;handlMutationseAdd&#x27;</span>])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>actions</code>里面的函数主要用来处理<strong>异步操作</strong>以及一些业务逻辑,每一个函数里面都有一个形参，这个形参是一个对象，里面有一个<code>commit</code>方法，这个方法用来**触发<code>mutations</code>**里面的方法。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// mapMutations 把 actions 里面的方法映射到 methods 中</span></span><br><span class="line"><span class="attr">methods</span>:&#123;</span><br><span class="line">    ...<span class="title class_">Vuex</span>.<span class="title function_">mapActionss</span>(&#123;</span><br><span class="line">        <span class="attr">handleAdd</span>:<span class="string">&quot;handlMutationseAdd&quot;</span></span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 简写</span></span><br><span class="line"><span class="keyword">import</span> &#123; mapActionss&#125; <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span></span><br><span class="line"><span class="attr">methods</span>:&#123;  </span><br><span class="line">	...<span class="title function_">mapActionss</span>([<span class="string">&#x27;handlMutationseAdd&#x27;</span>])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="modules的使用"><a href="#modules的使用" class="headerlink" title="modules的使用"></a><strong>modules的使用</strong></h3><p>modules是把公共的状态按照模块进行划分。每个模块都相当于一个小型的<code>Vuex</code>，即每个模块里面都会有<code>state</code> <code>getters</code> <code>actions</code> <code>mutations</code>。</p>
+<p>多人协作开发的时候，可能子模块和主模块中的函数名字会相同，这样在调用函数的时候，相同名字的函数都会被调用，就会发生问题。为了解决这个问题，导出模块的时候要加 <code>namespace:true</code> ，主要的作用是将每个模块都有独立命名空间。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">	<span class="attr">namespaced</span>: <span class="literal">true</span>,</span><br><span class="line">	....</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>模块化后，<code>store</code>实例的<code>state</code>属性访问方式为:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">this</span>.<span class="property">$store</span>.<span class="property">state</span>.<span class="property">todo</span>.<span class="property">inputVal</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Vuex持久化储存"><a href="#Vuex持久化储存" class="headerlink" title="Vuex持久化储存"></a><strong>Vuex持久化储存</strong></h3><p><code>Vuex</code>本身不具有持久化存储的能力，vuex是单向数据流，存在vuex中的变量都是响应式数据。组件中一般会通过computed来使用store中的状态、且有缓存，但是当我们去刷新浏览器的时候，store中的状态都会被清空、重新初始化为最初的状态。要实现持久化存储，就是将其状态保存到<code>localStorage</code>或者<code>sessionStorage</code>中，实现方法有两种：</p>
+<ol>
+<li><p>使用插件：<code>vuex-persistedstate</code></p>
+<p>安装插件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install vuex-persistedstate</span><br></pre></td></tr></table></figure>
+
+<p>使用：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Vue</span> <span class="keyword">from</span> <span class="string">&quot;vue&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Vuex</span> <span class="keyword">from</span> <span class="string">&quot;vuex&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> test <span class="keyword">from</span> <span class="string">&#x27;./modules/test&#x27;</span></span><br><span class="line"><span class="keyword">import</span> user <span class="keyword">from</span> <span class="string">&#x27;./modules/user&#x27;</span></span><br><span class="line"><span class="comment">// 引入插件</span></span><br><span class="line"><span class="keyword">import</span> createPersistedState <span class="keyword">from</span> <span class="string">&quot;vuex-persistedstate&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">use</span>(<span class="title class_">Vuex</span>);</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> <span class="title class_">Vuex</span>.<span class="title class_">Store</span>(&#123;</span><br><span class="line">  <span class="attr">modules</span>: &#123;</span><br><span class="line">    test,</span><br><span class="line">    user</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">/* vuex数据持久化配置 */</span></span><br><span class="line">  <span class="attr">plugins</span>: [</span><br><span class="line">    <span class="title function_">createPersistedState</span>(&#123;</span><br><span class="line">      <span class="comment">// 存储方式：localStorage、sessionStorage、cookies</span></span><br><span class="line">      <span class="attr">storage</span>: <span class="variable language_">window</span>.<span class="property">sessionStorage</span>,</span><br><span class="line">      <span class="comment">// 存储的 key 的key值</span></span><br><span class="line">      <span class="attr">key</span>: <span class="string">&quot;store&quot;</span>,</span><br><span class="line">      <span class="title function_">reducer</span>(<span class="params">state</span>) &#123; <span class="comment">//render错误修改</span></span><br><span class="line">      <span class="comment">// 要存储的数据：本项目采用es6扩展运算符的方式存储了state中所有的数据</span></span><br><span class="line">        <span class="keyword">return</span> &#123; ...state &#125;;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  ]</span><br></pre></td></tr></table></figure>
+
+<p>如果只需要存储 <code>state</code> 中一部分数据：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">plugins</span>: [</span><br><span class="line">  <span class="title function_">createPersistedState</span>(&#123;</span><br><span class="line">    <span class="attr">storage</span>: <span class="variable language_">window</span>.<span class="property">sessionStorage</span>,</span><br><span class="line">    <span class="attr">key</span>: <span class="string">&quot;store&quot;</span>,</span><br><span class="line">    <span class="comment">// 只持久化存储user模块的状态</span></span><br><span class="line">    <span class="attr">paths</span>: [<span class="string">&#x27;user&#x27;</span>]</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>自己实现：</p>
+<p><code>utils/index.js</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 存储方式：localStorage、sessionStorage、cookies</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">class</span> <span class="title class_">SessionUtils</span> &#123;</span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">get</span>(<span class="params">key</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title class_">JSON</span>.<span class="title function_">parse</span>(<span class="variable language_">window</span>.<span class="property">sessionStorage</span>.<span class="title function_">getItem</span>(key))</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">set</span>(<span class="params">key, value</span>) &#123;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">sessionStorage</span>.<span class="title function_">setItem</span>(key, <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(value))</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">remove</span>(<span class="params">key</span>) &#123;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">sessionStorage</span>.<span class="title function_">removeItem</span>(key)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后在vuex中的使用：<code>store/index.js</code> </p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">SessionUtils</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;@/utils/index.js&#x27;</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="attr">namespaced</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">state</span>: &#123;</span><br><span class="line">    <span class="attr">count</span>: <span class="title class_">SessionUtils</span>.<span class="title function_">get</span>(<span class="string">&#x27;count&#x27;</span>) || <span class="number">0</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">mutations</span>: &#123;</span><br><span class="line">    <span class="title function_">UPDATE_COUNT</span>(<span class="params">state, count</span>) &#123;</span><br><span class="line">      state.<span class="property">count</span>++</span><br><span class="line">      <span class="title class_">SessionUtils</span>.<span class="title function_">set</span>(<span class="string">&#x27;count&#x27;</span>, state.<span class="property">count</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h2><h3 id="路由的模式和区别"><a href="#路由的模式和区别" class="headerlink" title="路由的模式和区别"></a>路由的模式和区别</h3><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">history</th>
+<th align="center">hash</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">表象</td>
+<td align="center"><a href="https://zhuanlan.zhihu.com/p/24814675">https://zhuanlan.zhihu.com/p/24814675</a></td>
+<td align="center"><a href="http://example.com/#/foo/bar">http://example.com/#/foo/bar</a></td>
+</tr>
+<tr>
+<td align="center">发送请求</td>
+<td align="center">通过HTML5 History API可以在不刷新页面的情况下，直接改变当前URL。会发一次请求</td>
+<td align="center">hash仅仅是客户端的一个状态，也就是说，当向服务器发请求的时候，hash部分并不会发过去。不会发请求</td>
+</tr>
+<tr>
+<td align="center">优点</td>
+<td align="center">更加直观和正式</td>
+<td align="center">兼容性更好</td>
+</tr>
+<tr>
+<td align="center">项目打包前自测</td>
+<td align="center">默认看不到内容</td>
+<td align="center">默认可以看到内容</td>
+</tr>
+</tbody></table>
+<h3 id="子路由和动态路由"><a href="#子路由和动态路由" class="headerlink" title="子路由和动态路由"></a>子路由和动态路由</h3><p><em>动态路由</em></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> routes = [</span><br><span class="line">  <span class="comment">// 动态字段以冒号开始</span></span><br><span class="line">  &#123; <span class="attr">path</span>: <span class="string">&#x27;/users/:id&#x27;</span>, <span class="attr">component</span>: <span class="title class_">User</span> &#125;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<p><em>子路由</em></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> routes = [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">path</span>: <span class="string">&#x27;/user/:id&#x27;</span>,</span><br><span class="line">    <span class="attr">component</span>: <span class="title class_">User</span>,</span><br><span class="line">    <span class="attr">children</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="comment">// 当 /user/:id/profile 匹配成功</span></span><br><span class="line">        <span class="comment">// UserProfile 将被渲染到 User 的 &lt;router-view&gt; 内部</span></span><br><span class="line">        <span class="attr">path</span>: <span class="string">&#x27;profile&#x27;</span>,</span><br><span class="line">        <span class="attr">component</span>: <span class="title class_">UserProfile</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="comment">// 当 /user/:id/posts 匹配成功</span></span><br><span class="line">        <span class="comment">// UserPosts 将被渲染到 User 的 &lt;router-view&gt; 内部</span></span><br><span class="line">        <span class="attr">path</span>: <span class="string">&#x27;posts&#x27;</span>,</span><br><span class="line">        <span class="attr">component</span>: <span class="title class_">UserPosts</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">    ],</span><br><span class="line">  &#125;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h3 id="路由传值"><a href="#路由传值" class="headerlink" title="路由传值"></a>路由传值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">this</span>.<span class="property">$router</span>.<span class="title function_">push</span>(&#123;</span><br><span class="line">    <span class="attr">path</span>: <span class="string">&quot;/login&quot;</span>,</span><br><span class="line">    <span class="attr">query</span>: &#123;</span><br><span class="line">        <span class="attr">uname</span>: <span class="variable language_">this</span>.<span class="property">userName</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$router</span>.<span class="title function_">push</span>(&#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;login&quot;</span>,</span><br><span class="line">    <span class="attr">params</span>: &#123;</span><br><span class="line">        <span class="attr">uname</span>: <span class="variable language_">this</span>.<span class="property">userName</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="导航故障"><a href="#导航故障" class="headerlink" title="导航故障"></a>导航故障</h3><p>当使用 <code>router-link</code> 组件时，Vue Router 会自动调用 <code>router.push</code> 来触发一次导航。 有些情况会留在同一页面上：</p>
+<ul>
+<li>用户已经位于他们正在尝试导航到的页面</li>
+<li>一个<a href="https://v3.router.vuejs.org/zh/guide/advanced/navigation-guards.html">导航守卫</a>通过调用 <code>next(false)</code> 中断了这次导航</li>
+<li>一个<a href="https://v3.router.vuejs.org/zh/guide/advanced/navigation-guards.html">导航守卫</a>抛出了一个错误，或者调用了 <code>next(new Error())</code></li>
+</ul>
+<p>当使用 <code>router-link</code> 组件时，这些失败都不会打印出错误。如果你使用 <code>router.push</code> 或者 <code>router.replace</code> 的话，可能会在控制台看到一条 <em>“Uncaught (in promise) Error”</em> 这样的错误，后面跟着一条更具体的消息。</p>
+<p>解决方法是在请求的后面打印抛出的错误。</p>
+<h3 id="route-和-router"><a href="#route-和-router" class="headerlink" title="$route 和 $router"></a><code>$route</code> 和 <code>$router</code></h3><p><code>$route</code>是路由信息对象，里面主要包含路由的一些基本信息，包含当前的路径，参数，query对象等。(包括name、meta、path、hash、query、params、fullPath、matched、redirectedFrom)</p>
+<p><em>route object 出现在多个地方:</em></p>
+<ol>
+<li>组件内的 this.route和route watcher 回调（监测变化处理）;</li>
+<li>router.match(location) 的返回值</li>
+<li>scrollBehavior 方法的参数</li>
+</ol>
+<p>方法：</p>
+<ol>
+<li><code>$route.path</code> 字符串，对应当前路由的路径，总是解析为绝对路径，如 “&#x2F;foo&#x2F;bar”</li>
+<li><code>$route.params</code> 一个 key&#x2F;value 对象，包含了 动态片段 和 全匹配片段，<br>   如果没有路由参数，就是一个空对象。</li>
+<li><code>$route.query</code>  一个 key&#x2F;value 对象，表示 URL 查询参数。<br>   例如，对于路径 &#x2F;foo?user&#x3D;1，则有 $route.query.user &#x3D;&#x3D; 1, 如果没有查询参数，则是个空对象。</li>
+<li><code>$route.hash</code> 当前路由的 hash 值 (不带 #) ，如果没有 hash 值，则为空字符串。锚点</li>
+<li><code>$route.fullPath</code> 完成解析后的 URL，包含查询参数和 hash 的完整路径。</li>
+<li><code>$route.matched</code> 数组，包含当前匹配的路径中所包含的所有片段所对应的配置参数对象。</li>
+<li><code>$route.name</code>  当前路径名字</li>
+<li><code>$route.meta</code>  路由元信息</li>
+</ol>
+<p><code>$router</code>对象是全局路由的实例，是router构造方法的实例,包含了一些路由的跳转方法，钩子函数等</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 带查询参数，变成 /register?plan=123</span></span><br><span class="line">this.<span class="variable">$router</span>.<span class="title function_ invoke__">push</span>(&#123; <span class="attr">path</span>: <span class="string">&#x27;register&#x27;</span>, <span class="attr">query</span>: &#123; <span class="attr">plan</span>: <span class="string">&#x27;123&#x27;</span> &#125;&#125;)</span><br><span class="line"><span class="comment">// 页面路由跳转 前进或者后退</span></span><br><span class="line">this.<span class="variable">$router</span>.<span class="title function_ invoke__">go</span>(-<span class="number">1</span>)</span><br><span class="line">    <span class="comment">// 一般使用replace来做404页面</span></span><br><span class="line">this.<span class="variable">$router</span>.<span class="title function_ invoke__">replace</span>(<span class="string">&#x27;/&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="导航守卫"><a href="#导航守卫" class="headerlink" title="导航守卫"></a>导航守卫</h3><p><em>全局守卫</em>  <strong>(使用不多)</strong></p>
+<p><code>router.beforeEach(fn)</code>: 全局前置路由守卫</p>
+<p><code>afterEach(fn)</code>: 全局后置路由守卫, 表示离开当前路由时执行</p>
+<p>fn中有三个参数</p>
+<ul>
+<li>to:表示要去哪里</li>
+<li>from：表示从哪里来</li>
+<li>next：表示通不通过</li>
+</ul>
+<p>关于<code>next()</code>的使用</p>
+<ul>
+<li><code>next()</code> 等价于 next( true ) 表示可以从当前路由跳转到目标路由</li>
+<li><code>next( false )</code> 表示不通过， 表示从当前路由跳转不到目标路由</li>
+<li><code>next(’/login’)</code> 等价于 next({path:’&#x2F;login’,params,query}), 跳转指定的路由</li>
+<li>next( fn ) 数据预加载</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">router.<span class="title function_">beforeEach</span>( <span class="function">(<span class="params">to,<span class="keyword">from</span>,next</span>) =&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">const</span> name = <span class="variable language_">localStorage</span>.<span class="title function_">getItem</span>(<span class="string">&#x27;name&#x27;</span>);<span class="comment">//查看本地存储上是否有name对象</span></span><br><span class="line">    <span class="keyword">if</span>( name || to.<span class="property">path</span> === <span class="string">&#x27;/login&#x27;</span>)&#123;<span class="comment">//短路逻辑，有就可以继续执行，没有就跳转到登录页面</span></span><br><span class="line">        <span class="title function_">next</span>()</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">     <span class="title function_">next</span>( <span class="string">&#x27;/login&#x27;</span> )<span class="comment">//跳转登录页面</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line">router.<span class="title function_">afterEach</span>( <span class="function">(<span class="params">to,<span class="keyword">from</span>,next</span>)=&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>(to.<span class="property">path</span> === <span class="string">&#x27;/user&#x27;</span>)&#123;<span class="comment">//当to的path值等于这个时</span></span><br><span class="line">        <span class="title function_">alert</span>(<span class="string">&#x27;确定进入user吗&#x27;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><em>全局的解析守卫</em></p>
+<p>  在 <code>2.5.0+</code>你可以用 <code>router.beforeResolve</code> 注册一个全局守卫。这和 <code>router.beforeEach</code> 类似，区别是在导航被确认之前，同时在所有组件内守卫和异步路由组件被解析之后，解析守卫就被调用。必须保证整个项目的守卫和异步路由组件解析完成</p>
+<p><em>路由独享守卫</em>——<strong>写在路由表里</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line"><span class="attr">path</span>: <span class="string">&#x27;/user&#x27;</span>,</span><br><span class="line"><span class="attr">component</span>: <span class="title class_">User</span>,</span><br><span class="line"><span class="attr">beforeEnter</span>: <span class="function">(<span class="params"> to,<span class="keyword">from</span>,next </span>) =&gt;</span>&#123;</span><br><span class="line">    <span class="comment">// console.log(to)</span></span><br><span class="line">    <span class="keyword">const</span> name = <span class="variable language_">localStorage</span>.<span class="title function_">getItem</span>(<span class="string">&#x27;name&#x27;</span>);<span class="comment">//判断本地存储有没有name对象</span></span><br><span class="line">    <span class="keyword">if</span>( name)&#123;<span class="comment">//存在就可以继续执行</span></span><br><span class="line">        <span class="title function_">next</span>()</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">                <span class="title function_">alert</span>(<span class="string">&#x27;你还没有登录，点击跳转登录&#x27;</span>)<span class="comment">//不存在就弹窗告诉没有登录，点击登录</span></span><br><span class="line">                <span class="title function_">next</span>(<span class="string">&#x27;/login&#x27;</span>)</span><br><span class="line">            &#125;,<span class="number">0</span>)</span><br><span class="line">       &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p><em>组件内守卫</em> <strong>(不推荐用)</strong></p>
+<ul>
+<li>beforeRouteEnther( (to,from,next) &#x3D;&gt;{} ) 进入组件时触发</li>
+<li>beforeRouteUpdate( (to,from,next) &#x3D;&gt;{} ) 数据改变时触发</li>
+<li>beforeRouteLeave( (to,from,next) &#x3D;&gt;{} ) 离开组件时触发</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//判断两个输入框是否有值输入，有就可以直接离开，没有弹窗告诉确定是否离开，防止误触</span></span><br><span class="line"><span class="title function_">beforeRouteLeave</span>(<span class="params">to,<span class="keyword">from</span>,next</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="variable language_">this</span>.<span class="property">username</span> &amp;&amp; <span class="variable language_">this</span>.<span class="property">pwd</span>)&#123;</span><br><span class="line">        <span class="title function_">next</span>()</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="title function_">confirm</span>(<span class="string">&#x27;你确定要离开吗&#x27;</span>))&#123;<span class="comment">//返回一个布尔值</span></span><br><span class="line">            <span class="title function_">next</span>()</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="title function_">next</span>(<span class="literal">false</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="监听路由"><a href="#监听路由" class="headerlink" title="监听路由"></a>监听路由</h3><ol>
+<li><p>使用 <code>watch</code> 监听</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">watch</span>:&#123;</span><br><span class="line">  $router(to,<span class="keyword">from</span>)&#123;</span><br><span class="line">       <span class="variable language_">console</span>.<span class="title function_">log</span>(to.<span class="property">path</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>使用 <code>beforeRouteUpdate</code> 监听</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">beforeRouteUpdate (to, <span class="keyword">from</span>, next) &#123;</span><br><span class="line">	<span class="title function_">next</span>()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>前端</category>
+        <category>面试八股</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>面试</tag>
+        <tag>web前端</tag>
+        <tag>vuex</tag>
+        <tag>vue-router</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>前端面经-JS（二）</title>
-    <url>/2024/04/24/%E5%89%8D%E7%AB%AF/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1/20240424-%E5%89%8D%E7%AB%AF%E9%9D%A2%E7%BB%8F-JS(%E4%BA%8C)/</url>
+    <url>/2024/04/24/3SMY9WK/</url>
     <content><![CDATA[<h3 id="Q1：-如何判断-JavaScript-的数据类型"><a href="#Q1：-如何判断-JavaScript-的数据类型" class="headerlink" title="Q1： 如何判断 JavaScript 的数据类型"></a>Q1： 如何判断 JavaScript 的数据类型</h3><ol>
 <li><p>**<code>typeof()</code> **</p>
 <p>使用 <code>typeof</code> 只能判断基本数据类型, 如 number, string, boolean, symbol 和 undefined</p>
@@ -1305,7 +1345,7 @@
   </entry>
   <entry>
     <title>前端面经-Vue(三)</title>
-    <url>/2024/04/21/%E5%89%8D%E7%AB%AF/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1/20240421-%E5%89%8D%E7%AB%AF%E9%9D%A2%E7%BB%8F-Vue(%E4%B8%89)/</url>
+    <url>/2024/04/21/715/</url>
     <content><![CDATA[<h2 id="WebAPI（Vue）"><a href="#WebAPI（Vue）" class="headerlink" title="WebAPI（Vue）"></a>WebAPI（Vue）</h2><h3 id="set"><a href="#set" class="headerlink" title="$set"></a><code>$set</code></h3><p>设置对象的属性。如果对象是响应式的，确保属性被创建后也是响应式的，同时触发视图更新。这个方法用于避开Vue不能检测属性被添加的限制。</p>
 <p><strong>常见问题：</strong> <em>数据更新了页面还没更新是为什么？</em> </p>
 <p>有可能是以下问题：</p>
